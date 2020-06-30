@@ -48,5 +48,3 @@ i18next
         updateContent();
         i18next.on('languageChanged', updateContent);
     });
-
-

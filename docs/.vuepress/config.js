@@ -63,6 +63,12 @@ module.exports = {
                     return image && ((!image.startsWith('http') && $site.themeConfig.domain || '') + image)
                 }
             },
+        ],
+        [
+            () => ({
+                name: 'scroll-anchor-into-view-plugin',
+                clientRootMixin: require('path').resolve(__dirname, 'mixins', 'scrollAnchorIntoView.js')
+            })
         ]
     ],
 }

@@ -1,12 +1,12 @@
 # Examples
 
-Here is a collection of example applications using the **i18next I18n Phrase In-Context Editor Post Processor** library.
+Here is a collection of example applications using the **i18next Phrase In-Context Editor Post Processor** library.
 
 ## Basic demo
 
 This application features basic functionalities of the [**i18next**](https://www.i18next.com/) and the [**Phrase In-Context Editor**](https://help.phrase.com/help/translate-directly-on-your-website).
 
-Go to, and clone [`examples/basic` directory of **i18next I18n Phrase In-Context Editor Post Processor** repo](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/tree/master/examples/basic).
+Go to, and clone [`examples/basic` directory of **i18next Phrase In-Context Editor Post Processor** repo](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/tree/master/examples/basic).
 
 To run the example use following commands:
 
@@ -34,7 +34,7 @@ Password: phrase
 
 This application features basic functionalities of the [**react-i18next**](https://react.i18next.com) and the [**Phrase In-Context Editor**](https://help.phrase.com/help/translate-directly-on-your-website).
 
-Go to, and clone [`examples/react` directory of **i18next I18n Phrase In-Context Editor Post Processor** repo](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/tree/master/examples/react).
+Go to, and clone [`examples/react` directory of **i18next Phrase In-Context Editor Post Processor** repo](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/tree/master/examples/react).
 
 To run the example use following commands:
 

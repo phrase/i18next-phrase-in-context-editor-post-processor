@@ -3,7 +3,7 @@
 ## Compatibility
 
 ::: warning
-**i18next I18n Phrase In-Context Editor Post Processor** supports all **i18next** versions newer than [`19.5.1`](https://github.com/i18next/i18next/releases/tag/v19.5.1). Although this library might work with previous versions as well, they're not officialy supported and might not get any specific updates or bug fixes.
+**i18next Phrase In-Context Editor Post Processor** supports all **i18next** versions newer than [`19.5.1`](https://github.com/i18next/i18next/releases/tag/v19.5.1). Although this library might work with previous versions as well, they're not officialy supported and might not get any specific updates or bug fixes.
 :::
 
 ## Installation
@@ -51,9 +51,9 @@ i18next
 
 In this case, to integrate our library you only need to follow four simple steps:
 
-- Import the **i18next I18n Phrase In-Context Editor Post Processor** library.
-- Create new **i18next I18n Phrase In-Context Editor Post Processor** instance, passing *Phrase Config* as an argument.
-- Pass newly created **i18next I18n Phrase In-Context Editor Post Processor** instance to **i18next** [`use method`](https://www.i18next.com/overview/api#use).
+- Import the **i18next Phrase In-Context Editor Post Processor** library.
+- Create new **i18next Phrase In-Context Editor Post Processor** instance, passing *Phrase Config* as an argument.
+- Pass newly created **i18next Phrase In-Context Editor Post Processor** instance to **i18next** [`use method`](https://www.i18next.com/overview/api#use).
 - Add `phraseInContextEditor` string to [`postProcess`](https://www.i18next.com/overview/configuration-options#translation-defaults) array passed within configuration object of **i18next** [`init method`](https://www.i18next.com/overview/api#init).
 
 Sounds easy enough, right? Let's have a look at an updated example:

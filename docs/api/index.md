@@ -2,7 +2,7 @@
 
 ## PhraseInContextEditorPostProcessor
 
-The `PhraseInContextEditorPostProcessor` class is the main point of the **i18next I18n Phrase In-Context Editor Post Processor** library and the only place when [**Phrase**](https://phrase.com)-specific logic happens. Implements [<Badge text="PostProcessor" vertical="middle" /> i18n type](https://www.i18next.com/misc/creating-own-plugins#post-processor).
+The `PhraseInContextEditorPostProcessor` class is the main point of the **i18next Phrase In-Context Editor Post Processor** library and the only place when [**Phrase**](https://phrase.com)-specific logic happens. Implements [<Badge text="PostProcessor" vertical="middle" /> i18n type](https://www.i18next.com/misc/creating-own-plugins#post-processor).
 
 ### Constructor
 
@@ -41,7 +41,7 @@ If the **In-Context Editor** is not yet loaded, changing `phraseEnabled` to `tru
 :::
 
 :::tip
-Whenever disabled, the **i18next I18n Phrase In-Context Editor Post Processor** will stop interpolating keys - this will bring back the regular [**i18next**](https://www.i18next.com/) behavior. For more information on how the formatters are being handled, please head to the [introduction](../guide/).
+Whenever disabled, the **i18next Phrase In-Context Editor Post Processor** will stop interpolating keys - this will bring back the regular [**i18next**](https://www.i18next.com/) behavior. For more information on how the formatters are being handled, please head to the [introduction](../guide/).
 :::
 
 ## PhraseInContextEditorOptions
