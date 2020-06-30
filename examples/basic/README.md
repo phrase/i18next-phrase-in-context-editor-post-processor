@@ -22,4 +22,4 @@ Password: phrase
 
 ## More information
 
-For more info, please have a look at [i18next Phrase In-Context Editor post processor documentation](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor).
+For more info, please have a look at [i18next Phrase In-Context Editor post processor documentation](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/).

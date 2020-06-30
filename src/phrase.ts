@@ -24,14 +24,14 @@ export default class PhraseInContextEditorPostProcessor {
         this.phraseEnabled = options.phraseEnabled;
     }
 
+    interpolateKey (key: string) {
+        return PhraseInContextEditorPostProcessor.interpolateKey(key, this.config.prefix, this.config.suffix);
+    }
+
     process (value: string, keys: string[], options: unknown, translator: unknown): string {
         return this.phraseEnabled
             ? this.interpolateKey(keys[0])
             : value;
-    }
-
-    interpolateKey (key: string) {
-        return PhraseInContextEditorPostProcessor.interpolateKey(key, this.config.prefix, this.config.suffix);
     }
 
     private loadInContextEditor() {

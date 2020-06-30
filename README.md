@@ -7,6 +7,10 @@
 
 **i18next Phrase In-Context Editor Post Processor** is the official library for integrating [Phrase In-Context-Editor](https://help.phrase.com/help/translate-directly-on-your-website) with [i18next](https://www.i18next.com/).
 
+## :scroll: Documentation
+
+To get started, have a look at the [documentation](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/). There you will find [API docs](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/api/), [getting started guide](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/guide/getting-started/), [examples](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/examples/) and much more!
+
 ## :question: Questions
 
 For questions or support, contact us at: [phrase.com/contact](https://phrase.com/contact). The issue list of this repo is **exclusively** for bug reports or feature requests.
