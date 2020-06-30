@@ -1,0 +1,25 @@
+{
+  "name": "i18next-phrase-in-context-editor-post-processor-example-basic",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Jakub Freisler <jakubfreisler@phrase.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean:dist": "rimraf 'dist/*.?(css|js|map|html)'",
+    "prebuild": "yarn clean:dist",
+    "build": "parcel build src/index.html --experimental-scope-hoisting",
+    "prestart": "yarn clean:dist",
+    "start": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "i18next": "^19.5.1",
+    "i18next-browser-languagedetector": "^5.0.0",
+    "i18next-phrase-in-context-editor-post-processor": "../..",
+    "i18next-xhr-backend": "^3.2.2"
+  }
+}

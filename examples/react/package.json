@@ -1,0 +1,36 @@
+{
+  "name": "i18next-phrase-in-context-editor-post-processor-example-react",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Jakub Freisler <jakubfreisler@phrase.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "react-scripts": "^3.4.1",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "i18next": "^19.5.1",
+    "i18next-phrase-in-context-editor-post-processor": "../..",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-i18next": "^11.7.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

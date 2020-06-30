@@ -1,0 +1,52 @@
+{
+  "name": "i18next-phrase-in-context-editor-post-processor",
+  "description": "Plugin for i18next that paires well with Phrase In-Context Editor",
+  "version": "0.0.1",
+  "source": "index.ts",
+  "main": "dist/i18next-phrase-in-context-editor-post-processor.js",
+  "unpkg": "dist/i18next-phrase-in-context-editor-post-processor.umd.js",
+  "module": "dist/i18next-phrase-in-context-editor-post-processor.module.js",
+  "esmodule": "dist/i18next-phrase-in-context-editor-post-processor.modern.js",
+  "types": "dist/index.d.ts",
+  "author": "Jakub Freisler <jakubfreisler@phrase.com>",
+  "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "build": "microbundle build",
+    "start": "microbundle watch",
+    "test": "jest test",
+    "test.coverage": "yarn test --coverage",
+    "lint": "eslint '**/*.ts' --ignore-pattern '**/*.d.ts'",
+    "lint.fix": "yarn lint --fix"
+  },
+  "peerDependencies": {
+    "i18next": "^19.5.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^7.3.1",
+    "eslint-config-phrase": "https://github.com/phrase/eslint-config-phrase.git",
+    "i18next": "^19.5.1",
+    "jest": "^26.1.0",
+    "microbundle": "^0.12.2",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@sagi.io/globalthis": "^0.0.2"
+  },
+  "keywords": [
+    "i18next",
+    "i18next post processor",
+    "Phrase",
+    "In-Context Editor",
+    "translate",
+    "translation",
+    "i18n",
+    "l10n",
+    "localization",
+    "internationalization"
+  ]
+}
