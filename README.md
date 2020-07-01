@@ -9,7 +9,7 @@
 
 ## :scroll: Documentation
 
-To get started, have a look at the [documentation](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/). There you will find [API docs](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/api/), [getting started guide](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/guide/getting-started/), [examples](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/examples/) and much more!
+To get started, have a look at the [documentation](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/). There you will find [API docs](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/api/), [getting started guide](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/guide/), [examples](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/examples/) and much more!
 
 ## :question: Questions
 
