@@ -21,7 +21,7 @@ npm install i18next-phrase-in-context-editor-post-processor
 or load it via CDN:
 
 ```html
-<script src="https://unpkg.com/i18next-phrase-in-context-editor-post-processor/dist/i18next-phrase-in-context-editor-post-processor.umd.js"></script>
+<script src="https://unpkg.com/i18next-phrase-in-context-editor-post-processor"></script>
 ```
 
 ## Usage

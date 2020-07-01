@@ -5117,8 +5117,10 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-i18next-phrase-in-context-editor-post-processor@../..:
-  version "0.0.1"
+i18next-phrase-in-context-editor-post-processor@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/i18next-phrase-in-context-editor-post-processor/-/i18next-phrase-in-context-editor-post-processor-1.0.0.tgz#d9c746fa0c28018a0ac797b9a25fb32a9e29936e"
+  integrity sha512-fMGRzhI5VabYTfXg2nXZzc45dcc8In6g1mQP2o9YJxMx7OB1DyOn8vE+v35R3S+Fj/J5Yz0u/HJf5hIm4HKA5w==
   dependencies:
     "@sagi.io/globalthis" "^0.0.2"
 
