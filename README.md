@@ -44,6 +44,9 @@ yarn lint.fix
 # run all tests
 yarn test
 yarn test.coverage
+
+# serve docs at localhost:8080/i18next-phrase-in-context-editor-post-processor/
+yarn docs.dev
 ```
 
 ## :copyright: License

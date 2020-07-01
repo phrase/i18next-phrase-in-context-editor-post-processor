@@ -51,10 +51,10 @@ i18next
 
 In this case, to integrate our library you only need to follow four simple steps:
 
-- Import the **i18next Phrase In-Context Editor Post Processor** library.
-- Create new **i18next Phrase In-Context Editor Post Processor** instance, passing *Phrase Config* as an argument.
+- Import a **i18next Phrase In-Context Editor Post Processor** library.
+- Create new **i18next Phrase In-Context Editor Post Processor** instance, passing [<Badge text="PhraseConfig" vertical="middle" />](../api#phraseconfig) as the argument.
 - Pass newly created **i18next Phrase In-Context Editor Post Processor** instance to **i18next** [`use method`](https://www.i18next.com/overview/api#use).
-- Add `phraseInContextEditor` string to [`postProcess`](https://www.i18next.com/overview/configuration-options#translation-defaults) array passed within configuration object of **i18next** [`init method`](https://www.i18next.com/overview/api#init).
+- Add the `"phraseInContextEditor"` <Badge text="string" vertical="middle" /> to [`postProcess`](https://www.i18next.com/overview/configuration-options#translation-defaults) array property (passed within the configuration object of **i18next** [`init method`](https://www.i18next.com/overview/api#init)).
 
 Sounds easy enough, right? Let's have a look at an updated example:
 
@@ -85,6 +85,6 @@ i18next
     });
 ```
 
-From now on, the **In-Context Editor** is fully integrated into your JS app, congratulations! :tada:
+From now on, the **In-Context Editor** is fully integrated into your JS app. Congratulations! :tada:
 
 For further information about the possible configuration options and useful methods, please have a look at our [API docs](../../api).
