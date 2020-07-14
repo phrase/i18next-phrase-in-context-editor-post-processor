@@ -1,0 +1,17 @@
+{
+  "name": "i18next-phrase-in-context-editor-post-processor-example-basic",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "i18next": "^19.6.0",
+    "i18next-phrase-in-context-editor-post-processor": "^1.0.0",
+    "next": "9.3.5",
+    "next-i18next": "^4.5.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
