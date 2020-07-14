@@ -29,7 +29,6 @@ E-Mail: demo@phraseapp.com
 Password: phrase
 ```
 
-
 ## React i18next demo
 
 This application features basic functionalities of the [**react-i18next**](https://react.i18next.com) and the [**Phrase In-Context Editor**](https://help.phrase.com/help/translate-directly-on-your-website).
@@ -51,7 +50,37 @@ npm run start
 Now the application is visible under [http://localhost:3000/](http://localhost:3000/).
 
 The page will reload if you make edits.
-You will also see any lint errors in the console.
+Any lint errors will be visible in the console.
+
+This application uses a demo Phrase account under the hood. To login, use authentication data provided below:
+
+```bash
+E-Mail: demo@phraseapp.com
+Password: phrase
+```
+
+## Next.js i18next demo
+
+This application features basic functionalities of the [**nextjs-i18next**](https://www.npmjs.com/package/next-i18next) and the [**Phrase In-Context Editor**](https://help.phrase.com/help/translate-directly-on-your-website).
+
+Go to, and clone [`examples/next` directory of **i18next Phrase In-Context Editor Post Processor** repo](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/tree/master/examples/nextjs).
+
+To run the example use following commands:
+
+```bash
+# yarn
+yarn
+yarn dev
+
+# npm
+npm i
+npm run dev
+```
+
+Now the application is visible under [http://localhost:3000/](http://localhost:3000/).
+
+The page will reload if you make edits.
+Any nextjs errors will be visible within console.
 
 This application uses a demo Phrase account under the hood. To login, use authentication data provided below:
 
