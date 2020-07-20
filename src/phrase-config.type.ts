@@ -1,5 +1,6 @@
 export type PhraseConfig = {
     phraseEnabled: boolean;
+    scriptAutoLoad: boolean;
     baseUrl: string;
     profileUrl: string;
     apiBaseUrl: string;
