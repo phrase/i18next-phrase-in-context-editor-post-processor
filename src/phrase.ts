@@ -1,4 +1,5 @@
 import '@sagi.io/globalthis';
+import './typings/global';
 import { DeepPartial } from './typings/helpers';
 import { PhraseConfig } from "./phrase-config.type";
 
@@ -8,19 +9,39 @@ export default class PhraseInContextEditorPostProcessor {
     private static defaultConfig: Partial<PhraseConfig> = {
         prefix: '{{__',
         suffix: '__}}',
-        fullReparse: true
+        fullReparse: true,
+        scriptAutoLoad: true
     };
     private phraseScript?: HTMLScriptElement;
 
+    static get IN_CONTEXT_EDITOR_SCRIPT_URL () {
+        return `https://phrase.com/assets/in-context-editor/2.0/app.js?${new Date().getTime()}`;
+    }
+
     static interpolateKey (key: string, prefix: string, suffix: string): string {
         return prefix + 'phrase_' + key + suffix;
+    }
+
+    static loadInContextEditorScript () {
+        const phraseScript = document.createElement('script');
+        phraseScript.type = 'text/javascript';
+        phraseScript.async = true;
+        phraseScript.src = this.IN_CONTEXT_EDITOR_SCRIPT_URL;
+        const script = document.getElementsByTagName('script')[0];
+        if (script && script.parentNode) {
+            script.parentNode.insertBefore(phraseScript, script);
+        } else {
+            document.body.appendChild(phraseScript);
+        }
+    
+        return phraseScript;
     }
 
     type: 'postProcessor' = 'postProcessor';
     name = 'phraseInContextEditor';
 
     constructor (options: PhraseInContextEditorOptions) {
-        this.config = { ...(globalThis as any).PHRASEAPP_CONFIG, ...options } as PhraseConfig;
+        this.config = { ...globalThis.PHRASEAPP_CONFIG, ...options } as PhraseConfig;
         this.phraseEnabled = options.phraseEnabled;
     }
 
@@ -34,35 +55,26 @@ export default class PhraseInContextEditorPostProcessor {
             : value;
     }
 
-    private loadInContextEditor() {
-        this.phraseScript = document.createElement('script');
-        this.phraseScript.type = 'text/javascript';
-        this.phraseScript.async = true;
-        this.phraseScript.src = `https://phrase.com/assets/in-context-editor/2.0/app.js?${new Date().getTime()}`;
-        const script = document.getElementsByTagName('script')[0];
-        if (script && script.parentNode) {
-            script.parentNode.insertBefore(this.phraseScript, script);
-        } else {
-            document.body.appendChild(this.phraseScript);
-        }
-    }
-
     set phraseEnabled(phraseEnabled: boolean) {
-        (globalThis as any).PHRASEAPP_ENABLED = phraseEnabled;
-        if (phraseEnabled && !this.phraseScript) {
-            this.loadInContextEditor();
+        globalThis.PHRASEAPP_ENABLED = phraseEnabled;
+        if (phraseEnabled && this.config.scriptAutoLoad && !this.phraseScript) {
+            this.phraseScript = PhraseInContextEditorPostProcessor.loadInContextEditorScript();
         }
     }
 
     get phraseEnabled() {
-        return (globalThis as any).PHRASEAPP_ENABLED;
+        return globalThis.PHRASEAPP_ENABLED;
     }
 
     set config(options: PhraseConfig) {
-        (globalThis as any).PHRASEAPP_CONFIG = { ...PhraseInContextEditorPostProcessor.defaultConfig, ...options };
+        globalThis.PHRASEAPP_CONFIG = { ...PhraseInContextEditorPostProcessor.defaultConfig, ...options };
     }
 
     get config() {
-        return (globalThis as any).PHRASEAPP_CONFIG;
+        return globalThis.PHRASEAPP_CONFIG;
+    }
+
+    toScriptHTML () {
+        return `<script>window.PHRASEAPP_ENABLED=true;window.PHRASEAPP_CONFIG=${JSON.stringify(this.config)}</script><script type="text/javascript" async src="${PhraseInContextEditorPostProcessor.IN_CONTEXT_EDITOR_SCRIPT_URL}"></script>`;
     }
 }

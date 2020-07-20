@@ -73,6 +73,26 @@ describe('::interpolateKey', () => {
     });
 });
 
+describe('::loadInContextEditorScript', () => {
+    it('should add script element at the end of the body', () => {
+        PhraseInContextEditorPostProcessor.loadInContextEditorScript();
+        expect(document.body.children[document.body.children.length-1].tagName).toBe('SCRIPT');
+    });
+
+    describe('when there is already script element in DOM', () => {
+        beforeEach(() => {
+            document.head.append(document.createElement('script'));
+        });
+
+        it('should add script element before first script tag', () => {
+            PhraseInContextEditorPostProcessor.loadInContextEditorScript();
+            const loadedScript = document.querySelector('script');
+            expect(loadedScript?.src.split('?')[0]).toBe(PhraseInContextEditorPostProcessor.IN_CONTEXT_EDITOR_SCRIPT_URL.split('?')[0]);
+            expect(document.querySelectorAll('script').length).toBe(2);
+        });
+    });
+});
+
 describe('process', () => {
     describe('when phraseEnabled = true', () => {
         beforeEach(() => {
@@ -119,22 +139,40 @@ describe('interpolateKey', () => {
 });
 
 describe('phraseEnabled setter', () => {
-    describe('when phrase was enabled initially & trying to disable & enable it again', () => {
+    let PhraseInContextEditorPostProcessorLoadInContextEditorScriptSpy: jest.SpyInstance;
+
+    beforeEach(() => {
+        PhraseInContextEditorPostProcessorLoadInContextEditorScriptSpy = jest.spyOn(PhraseInContextEditorPostProcessor, 'loadInContextEditorScript').mockReturnValue(document.createElement('script'));
+    });
+    afterEach(() => {
+        PhraseInContextEditorPostProcessorLoadInContextEditorScriptSpy.mockRestore();
+    });
+
+    describe('when phrase was enabled initially', () => {
         beforeEach(() => {
             phraseInContextEditorPostProcessor = new PhraseInContextEditorPostProcessor({
                 projectId,
                 phraseEnabled: true,
             });
-            phraseInContextEditorPostProcessor.phraseEnabled = false;
         });
 
-        describe('when enabling phrase once again', () => {
+        it('should call ::loadInContextEditorScript', () => {
+            expect(PhraseInContextEditorPostProcessorLoadInContextEditorScriptSpy).toBeCalledTimes(1);
+        });
+
+        describe('trying to disable & enable it again', () => {
             beforeEach(() => {
-                phraseInContextEditorPostProcessor.phraseEnabled = true;
+                phraseInContextEditorPostProcessor.phraseEnabled = false;
             });
 
-            it('should not load phrase script anymore', () => {
-                expect(document.querySelectorAll('script').length).toBe(1);
+            describe('when enabling phrase once again', () => {
+                beforeEach(() => {
+                    phraseInContextEditorPostProcessor.phraseEnabled = true;
+                });
+
+                it('should not load phrase script anymore', () => {
+                    expect(PhraseInContextEditorPostProcessorLoadInContextEditorScriptSpy).toBeCalledTimes(1);
+                });
             });
         });
     });
@@ -165,5 +203,18 @@ describe('config getter', () => {
 
     it('should return PHRASEAPP_CONFIG GLOBAL', () => {
         expect(phraseInContextEditorPostProcessor.config).toBe(global.PHRASEAPP_CONFIG);
+    });
+});
+
+describe('toScriptHTML', () => {
+    it('should a valid script HTML with editor url in place', () => {
+        document.body.innerHTML = new PhraseInContextEditorPostProcessor({
+            projectId,
+            phraseEnabled: true,
+        }).toScriptHTML();
+
+        const scripts = document.querySelectorAll('script');
+        expect(scripts.length).toBe(2);
+        expect(scripts[1].src.split('?')[0]).toBe(PhraseInContextEditorPostProcessor.IN_CONTEXT_EDITOR_SCRIPT_URL.split('?')[0]);
     });
 });
