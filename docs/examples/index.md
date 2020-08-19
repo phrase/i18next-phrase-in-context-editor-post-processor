@@ -59,6 +59,40 @@ E-Mail: demo@phraseapp.com
 Password: phrase
 ```
 
+## Vue i18next
+
+This application features basic functionalities of the [**@panter/vue-i18next**](https://panter.github.io/vue-i18next/) and the [**Phrase In-Context Editor**](https://help.phrase.com/help/translate-directly-on-your-website).
+
+Go to, and clone [`examples/vue` directory of **i18next Phrase In-Context Editor Post Processor** repo](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/tree/master/examples/vue).
+
+To run the example, use following commands:
+
+```bash
+# yarn
+yarn
+yarn serve
+
+# npm
+npm i
+npm run serve
+```
+
+Now the application will be visible under [http://localhost:8080/](http://localhost:8080/).
+
+The page will reload if you make edits.
+Any lint errors will be visible in the console.
+
+This application uses a demo [Phrase](https://phrase.com) account under the hood. To login, use authentication data provided below:
+
+```bash
+E-Mail: demo@phraseapp.com
+Password: phrase
+```
+
+::: tip Notice
+This demo was built with the use of [Vue CLI](https://cli.vuejs.org). For more details, see the [Configuration Reference](https://cli.vuejs.org/config/).
+:::
+
 ## Next.js i18next
 
 This application features basic functionalities of the [**nextjs-i18next**](https://www.npmjs.com/package/next-i18next) and the [**Phrase In-Context Editor**](https://help.phrase.com/help/translate-directly-on-your-website).
