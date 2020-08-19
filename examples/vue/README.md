@@ -1,4 +1,4 @@
-# i18next Phrase In-Context Editor post processor react demo
+# i18next Phrase In-Context Editor post processor vue demo
 
 ## How to use the demo
 
@@ -6,10 +6,10 @@
 
 ```bash
 yarn
-yarn start
+yarn serve
 ```
 
-New tab in your default browser should open. If that's not the case look into your console for the development server address (by default, it's [http://localhost:3000](http://localhost:3000).
+Look into your console for the development server address (by default, it's [http://localhost:8080](http://localhost:8080).
 
 The page will reload if you make edits.
 Any lint errors will be visible in the console.
