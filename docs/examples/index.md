@@ -25,7 +25,7 @@ Now the application is visible under [http://localhost:1234/](http://localhost:1
 This application uses a demo [Phrase](https://phrase.com) account under the hood. To login, use authentication data provided below:
 
 ```bash
-E-Mail: demo@phraseapp.com
+E-Mail: demo@phrase.com
 Password: phrase
 ```
 
@@ -55,7 +55,7 @@ Any lint errors will be visible in the console.
 This application uses a demo [Phrase](https://phrase.com) account under the hood. To login, use authentication data provided below:
 
 ```bash
-E-Mail: demo@phraseapp.com
+E-Mail: demo@phrase.com
 Password: phrase
 ```
 
@@ -85,7 +85,7 @@ Any lint errors will be visible in the console.
 This application uses a demo [Phrase](https://phrase.com) account under the hood. To login, use authentication data provided below:
 
 ```bash
-E-Mail: demo@phraseapp.com
+E-Mail: demo@phrase.com
 Password: phrase
 ```
 
@@ -119,7 +119,7 @@ Any nextjs errors will be visible within console.
 This application uses a demo [Phrase](https://phrase.com) account under the hood. To login, use authentication data provided below:
 
 ```bash
-E-Mail: demo@phraseapp.com
+E-Mail: demo@phrase.com
 Password: phrase
 ```
 
@@ -153,7 +153,7 @@ Any Express errors will be visible within console.
 This application uses a demo [Phrase](https://phrase.com) account under the hood. To login, use authentication data provided below:
 
 ```bash
-E-Mail: demo@phraseapp.com
+E-Mail: demo@phrase.com
 Password: phrase
 ```
 

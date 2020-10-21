@@ -16,7 +16,7 @@ Look into your console for the development server address (by default it's [http
 This demo uses special, demo [Phrase](https://phrase.com) project. To login, use authentication data provided below:
 
 ```bash
-E-Mail: demo@phraseapp.com
+E-Mail: demo@phrase.com
 Password: phrase
 ```
 
