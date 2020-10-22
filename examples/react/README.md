@@ -19,7 +19,7 @@ Any lint errors will be visible in the console.
 This demo uses a special, demo [Phrase](https://phrase.com) project. To login, use the authentication data provided below:
 
 ```bash
-E-Mail: demo@phraseapp.com
+E-Mail: demo@phrase.com
 Password: phrase
 ```
 
