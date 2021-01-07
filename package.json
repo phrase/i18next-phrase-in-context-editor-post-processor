@@ -1,7 +1,7 @@
 {
   "name": "i18next-phrase-in-context-editor-post-processor",
   "description": "Plugin for i18next that paires well with Phrase In-Context Editor",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "source": "index.ts",
   "main": "dist/i18next-phrase-in-context-editor-post-processor.js",
   "unpkg": "dist/i18next-phrase-in-context-editor-post-processor.umd.js",
