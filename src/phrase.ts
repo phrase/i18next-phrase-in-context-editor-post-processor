@@ -22,19 +22,21 @@ export default class PhraseInContextEditorPostProcessor {
         return prefix + 'phrase_' + key + suffix;
     }
 
-    static loadInContextEditorScript () {
-        const phraseScript = document.createElement('script');
-        phraseScript.type = 'text/javascript';
-        phraseScript.async = true;
-        phraseScript.src = this.IN_CONTEXT_EDITOR_SCRIPT_URL;
-        const script = document.getElementsByTagName('script')[0];
-        if (script && script.parentNode) {
-            script.parentNode.insertBefore(phraseScript, script);
-        } else {
-            document.body.appendChild(phraseScript);
-        }
+    static loadInContextEditorScript() {
+        if (typeof window !== 'undefined') {
+            const phraseScript = document.createElement('script');
+            phraseScript.type = 'text/javascript';
+            phraseScript.async = true;
+            phraseScript.src = this.IN_CONTEXT_EDITOR_SCRIPT_URL;
+            const script = document.getElementsByTagName('script')[0];
+            if (script && script.parentNode) {
+                script.parentNode.insertBefore(phraseScript, script);
+            } else {
+                document.body.appendChild(phraseScript);
+            }
     
-        return phraseScript;
+            return phraseScript;
+        }
     }
 
     type: 'postProcessor' = 'postProcessor';

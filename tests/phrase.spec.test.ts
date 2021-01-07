@@ -91,6 +91,22 @@ describe('::loadInContextEditorScript', () => {
             expect(document.querySelectorAll('script').length).toBe(2);
         });
     });
+
+    describe('when window is undefined for SSR', () => {
+        const { window } = global;
+
+        beforeAll(() => {
+            delete (<any>global).window;
+        });
+
+        it('runs without errors', () => {
+            expect(PhraseInContextEditorPostProcessor.loadInContextEditorScript).not.toThrow();
+        });
+
+        afterAll(() => {
+            global.window = window;
+        });
+    });
 });
 
 describe('process', () => {
