@@ -4,6 +4,7 @@
   "description": "Node Express server with i18next.",
   "main": "index.js",
   "type": "commonjs",
+  "license": "MIT",
   "scripts": {
     "start": "node index.js"
   },

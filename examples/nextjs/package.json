@@ -1,6 +1,7 @@
 {
   "name": "i18next-phrase-in-context-editor-post-processor-example-basic",
   "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",

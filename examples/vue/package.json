@@ -2,12 +2,16 @@
   "name": "vue",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@panter/vue-i18next": "^0.15.2",
     "core-js": "^3.6.5",
+    "i18next": "^19.8.7",
+    "i18next-phrase-in-context-editor-post-processor": "^1.1.1",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.2"
