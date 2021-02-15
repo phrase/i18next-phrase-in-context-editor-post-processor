@@ -1,5 +1,6 @@
 import '@sagi.io/globalthis';
 import './typings/global';
+import './typings/helpers';
 import { DeepPartial } from './typings/helpers';
 import { PhraseConfig } from "./phrase-config.type";
 
