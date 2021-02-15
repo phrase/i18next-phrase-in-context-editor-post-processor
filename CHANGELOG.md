@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.2.0...v1.2.1) (2021-02-15)
+
+
+### Bug Fixes
+
+* add helpers.d.t file to the output bundle ([10984df](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/10984dfaca3b24dd92e5c523749e524bcb843edd)), closes [#15](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues/15)
+
 # [1.2.0](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.1.1...v1.2.0) (2021-02-15)
 
 
