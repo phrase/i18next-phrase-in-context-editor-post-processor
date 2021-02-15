@@ -21,5 +21,8 @@
     "i18next-browser-languagedetector": "^5.0.0",
     "i18next-phrase-in-context-editor-post-processor": "^1.0.0",
     "i18next-xhr-backend": "^3.2.2"
+  },
+  "resolutions": {
+    "**/node-forge": "^0.10.0"
   }
 }
