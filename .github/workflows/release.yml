@@ -15,7 +15,7 @@ jobs:
     - name: Build package
       run: yarn build
     - name: Semantic Release
-      uses: cycjimmy/semantic-release-action@v2
+      uses: cycjimmy/semantic-release-action@116647291d9b7bef1f5a4315deedd3f46ed4218b
       with:
         semantic_version: 17.1.1  # It is recommended to specify specifying version range
                                     # for semantic-release.
