@@ -11,9 +11,9 @@
 
 To get started, have a look at the [documentation](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/). There you will find [API docs](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/api/), [getting started guide](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/guide/), [examples](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/examples/) and much more!
 
-## :question: Questions
+## :question: Questions, support
 
-For questions or support, contact us at: [phrase.com/contact](https://phrase.com/contact). The issue list of this repo is **exclusively** for bug reports or feature requests.
+Please contact [support@phrase.com](mailto:support@phrase.com?subject=[GitHub]%20phrase-java) and we can take more direct action toward finding a solution.
 
 ## :exclamation: Issues
 
