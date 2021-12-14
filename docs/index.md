@@ -10,4 +10,4 @@ The [Phrase In-Context Editor](https://help.phrase.com/help/translate-directly-o
 
 This package is a [post processor](https://www.i18next.com/misc/creating-own-plugins#post-processor) for [i18next](https://www.i18next.com/). The main job of **i18next Phrase In-Context Editor Post Processor** is to convert every translation key into a format that is understandable by the [**Phrase In-Context Editor**](https://help.phrase.com/help/configure-in-context-editor). This allows us to gather an synchronize texts between [Phrase.com](https://phrase.com/) and your app.
 
-So, to get the [Phrase In-Context Editor](https://help.phrase.com/help/translate-directly-on-your-website) integrated with your application, you just need to install and properly include it. Let's have a look how to do that in the next chapter!
+So, to get the [Phrase In-Context Editor](https://help.phrase.com/help/translate-directly-on-your-website) integrated with your application, you just need to install and properly include it. Let's have a look how to do that in the next section!
