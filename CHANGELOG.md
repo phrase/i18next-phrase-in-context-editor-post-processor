@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.2.1...v1.3.0) (2021-12-14)
+
+
+### Features
+
+* **i18next:** add v20, 21 as valid peer deps ([9d1d87f](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/9d1d87fc4adfda8596bcb291caf3bf68af7317f2)), closes [#69](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues/69)
+
 ## [1.2.1](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.2.0...v1.2.1) (2021-02-15)
 
 
