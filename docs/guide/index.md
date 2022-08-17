@@ -88,3 +88,14 @@ i18next
 From now on, the **In-Context Editor** is fully integrated into your JS app. Congratulations! :tada:
 
 For further information about the possible configuration options and useful methods, please have a look at our [API docs](../../api).
+
+## Using the US Datacenter with ICE
+
+In addition to `phraseEnabled` and `projectId` in the config, also add the US specific URLs to enable working through the US endpoint.
+```
+  baseUrl: "https://us.app.phrase.com",
+  apiBaseUrl: 'https://api.us.app.phrase.com/api/v2',
+  oauthEndpointUrl: "https://api.us.app.phrase.com/api/v2/authorizations",
+  profileUrl: "https://us.app.phrase.com/settings/profile",
+```
+
