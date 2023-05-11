@@ -16,6 +16,7 @@ beforeEach(() => {
     phraseScript = null;
     phraseInContextEditorPostProcessor = undefined;
     ICEOptions.phraseEnabled = true;
+    ICEOptions.useOldICE = false;
 });
 
 afterEach(() => {
@@ -25,31 +26,65 @@ afterEach(() => {
 
 describe('constructor', () => {
     describe('when phraseEnabled = true', () => {
-        beforeEach(() => {
-            createPhraseInContextEditorPostProcessor();
-            phraseScript = document.querySelector('script');
+        describe('when using the new in context editor', () => {
+            beforeEach(() => {
+                ICEOptions.useOldICE = false;
+                createPhraseInContextEditorPostProcessor();
+                phraseScript = document.querySelector('script');
+            });
+            
+            it('should add script tag to the document', () => {
+                expect(phraseScript).not.toBeNull();
+            });
+            it('should add script tag with phrase url', () => {
+                expect(phraseScript?.src).toBe('https://d2bgdldl6xit7z.cloudfront.net/latest/ice/index.js');
+            });
+            it('should set window.PHRASEAPP_ENABLED', () => {
+                expect(window.PHRASEAPP_ENABLED).toBeTruthy();
+            });
+            describe('when script element already exists in the document', () => {
+                let script: HTMLScriptElement;
+                beforeEach(() => {
+                    script = document.createElement('script');
+                    document.head.append(script);
+                    createPhraseInContextEditorPostProcessor();
+                    phraseScript = document.querySelector('script');
+                });
+
+                it('should add phrase script right before the first script element', () => {
+                    expect(phraseScript?.nextElementSibling).toBe(script);
+                });
+            });
         });
 
-        it('should add script tag to the document', () => {
-            expect(phraseScript).not.toBeNull();
-        });
-        it('should add script tag with phrase url', () => {
-            expect(phraseScript?.src).toBe('https://d2bgdldl6xit7z.cloudfront.net/latest/ice/index.js');
-        });
-        it('should set window.PHRASEAPP_ENABLED', () => {
-            expect(window.PHRASEAPP_ENABLED).toBeTruthy();
-        });
-        describe('when script element already exists in the document', () => {
-            let script: HTMLScriptElement;
+        describe('when using the old in context editor', () => {
             beforeEach(() => {
-                script = document.createElement('script');
-                document.head.append(script);
+                ICEOptions.useOldICE = true;
                 createPhraseInContextEditorPostProcessor();
                 phraseScript = document.querySelector('script');
             });
 
-            it('should add phrase script right before the first script element', () => {
-                expect(phraseScript?.nextElementSibling).toBe(script);
+            it('should add script tag to the document', () => {
+                expect(phraseScript).not.toBeNull();
+            });
+            it('should add script tag with phrase url', () => {
+                expect(phraseScript?.src.split('?')[0]).toBe('https://phrase.com/assets/in-context-editor/2.0/app.js'.split('?')[0]);
+            });
+            it('should set window.PHRASEAPP_ENABLED', () => {
+                expect(window.PHRASEAPP_ENABLED).toBeTruthy();
+            });
+            describe('when script element already exists in the document', () => {
+                let script: HTMLScriptElement;
+                beforeEach(() => {
+                    script = document.createElement('script');
+                    document.head.append(script);
+                    createPhraseInContextEditorPostProcessor();
+                    phraseScript = document.querySelector('script');
+                });
+
+                it('should add phrase script right before the first script element', () => {
+                    expect(phraseScript?.nextElementSibling).toBe(script);
+                });
             });
         });
     });
@@ -194,12 +229,31 @@ describe('config getter', () => {
 });
 
 describe('toScriptHTML', () => {
-    it('should a valid script HTML with editor url in place', () => {
-        createPhraseInContextEditorPostProcessor();
-        document.body.innerHTML = phraseInContextEditorPostProcessor!.toScriptHTML();
+    describe('when using the new in context editor', () => {
+        beforeEach(() => {
+            ICEOptions.useOldICE = false;
+            createPhraseInContextEditorPostProcessor();
+            document.body.innerHTML = phraseInContextEditorPostProcessor!.toScriptHTML();
+        });
 
-        const scripts = document.querySelectorAll('script');
-        expect(scripts.length).toBe(2);
-        expect(scripts[1].src.split('?')[0]).toBe('https://d2bgdldl6xit7z.cloudfront.net/latest/ice/index.js'.split('?')[0]);
+        it('should a valid script HTML with editor url in place', () => {
+            const scripts = document.querySelectorAll('script');
+            expect(scripts.length).toBe(2);
+            expect(scripts[1].src.split('?')[0]).toBe('https://d2bgdldl6xit7z.cloudfront.net/latest/ice/index.js'.split('?')[0]);
+        });
+    });
+
+    describe('when using the old in context editor', () => {
+        beforeEach(() => {
+            ICEOptions.useOldICE = true;
+            createPhraseInContextEditorPostProcessor();
+            document.body.innerHTML = phraseInContextEditorPostProcessor!.toScriptHTML();
+        });
+
+        it('should a valid script HTML with editor url in place', () => {
+            const scripts = document.querySelectorAll('script');
+            expect(scripts.length).toBe(2);
+            expect(scripts[1].src.split('?')[0]).toBe('https://phrase.com/assets/in-context-editor/2.0/app.js'.split('?')[0]);
+        });
     });
 });
