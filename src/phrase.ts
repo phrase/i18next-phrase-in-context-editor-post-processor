@@ -7,26 +7,34 @@ import { PhraseConfig } from "./phrase-config.type";
 export type PhraseInContextEditorOptions = Omit<DeepPartial<PhraseConfig>, 'phraseEnabled' | 'projectId'> & Pick<PhraseConfig, 'phraseEnabled' | 'projectId'>;
 
 export default class PhraseInContextEditorPostProcessor {
-    private static defaultConfig: Partial<PhraseConfig> = {
+    private defaultConfig: Partial<PhraseConfig> = {
         prefix: '{{__',
         suffix: '__}}',
         fullReparse: true,
         scriptAutoLoad: true
     };
-    private phraseScript?: HTMLScriptElement;
+    phraseScript?: HTMLScriptElement;
 
-    static get IN_CONTEXT_EDITOR_SCRIPT_URL () {
-        return `https://phrase.com/assets/in-context-editor/2.0/app.js?${new Date().getTime()}`;
+    get IN_CONTEXT_EDITOR_SCRIPT_URL () {
+        if (this.config.useOldICE) {
+            return `https://phrase.com/assets/in-context-editor/2.0/app.js?${new Date().getTime()}`;
+        } else {
+            return 'https://d2bgdldl6xit7z.cloudfront.net/latest/ice/index.js';
+        }
     }
 
     static interpolateKey (key: string, prefix: string, suffix: string): string {
         return prefix + 'phrase_' + key + suffix;
     }
 
-    static loadInContextEditorScript() {
+    loadInContextEditorScript() {
         if (typeof window !== 'undefined') {
             const phraseScript = document.createElement('script');
-            phraseScript.type = 'text/javascript';
+
+            !this.config.useOldICE 
+                ? phraseScript.type = 'module'
+                : phraseScript.type = 'text/javascript';
+            
             phraseScript.async = true;
             phraseScript.src = this.IN_CONTEXT_EDITOR_SCRIPT_URL;
             const script = document.getElementsByTagName('script')[0];
@@ -61,7 +69,7 @@ export default class PhraseInContextEditorPostProcessor {
     set phraseEnabled(phraseEnabled: boolean) {
         globalThis.PHRASEAPP_ENABLED = phraseEnabled;
         if (phraseEnabled && this.config.scriptAutoLoad && !this.phraseScript) {
-            this.phraseScript = PhraseInContextEditorPostProcessor.loadInContextEditorScript();
+            this.phraseScript = this.loadInContextEditorScript();
         }
     }
 
@@ -70,7 +78,7 @@ export default class PhraseInContextEditorPostProcessor {
     }
 
     set config(options: PhraseConfig) {
-        globalThis.PHRASEAPP_CONFIG = { ...PhraseInContextEditorPostProcessor.defaultConfig, ...options };
+        globalThis.PHRASEAPP_CONFIG = { ...this.defaultConfig, ...options };
     }
 
     get config() {
@@ -78,6 +86,6 @@ export default class PhraseInContextEditorPostProcessor {
     }
 
     toScriptHTML () {
-        return `<script>window.PHRASEAPP_ENABLED=true;window.PHRASEAPP_CONFIG=${JSON.stringify(this.config)}</script><script type="text/javascript" async src="${PhraseInContextEditorPostProcessor.IN_CONTEXT_EDITOR_SCRIPT_URL}"></script>`;
+        return `<script>window.PHRASEAPP_ENABLED=true;window.PHRASEAPP_CONFIG=${JSON.stringify(this.config)}</script><script type="text/javascript" async src="${this.IN_CONTEXT_EDITOR_SCRIPT_URL}"></script>`;
     }
 }
