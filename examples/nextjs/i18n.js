@@ -11,7 +11,8 @@ module.exports = new NextI18Next({
     use: [
         new PhraseInContextEditorPostProcessor({
             phraseEnabled: true,
-            projectId: '00000000000000004158e0858d2fa45c'
+            projectId: '00000000000000004158e0858d2fa45c',
+            accountId: '0bed59e5',
         })
     ],
     postProcess: ['phraseInContextEditor']

@@ -24,7 +24,8 @@ i18n
     .use(initReactI18next) // passes i18n down to react-i18next
     .use(new PhraseInContextEditorPostProcessor({
         phraseEnabled: true,
-        projectId: '00000000000000004158e0858d2fa45c'
+        projectId: '00000000000000004158e0858d2fa45c',
+        accountId: '0bed59e5',
     }))
     .init({
         resources,

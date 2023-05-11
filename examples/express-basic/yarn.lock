@@ -198,10 +198,8 @@ i18next-http-middleware@1.0.1:
   resolved "https://registry.yarnpkg.com/i18next-http-middleware/-/i18next-http-middleware-1.0.1.tgz#ec113a41fcd208b4c4b22863ac98a536d48400db"
   integrity sha512-swo3FaOkKciv1KoROqG63qb6MVaE/2hp0xnBUIJAd8lTUJFSG6+ZepO33rMw/5zcMG6wnU1e+DWPXVt5UMxGJQ==
 
-i18next-phrase-in-context-editor-post-processor@^1.0.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/i18next-phrase-in-context-editor-post-processor/-/i18next-phrase-in-context-editor-post-processor-1.1.1.tgz#8a7e6894d887ffdd98c5d397584aad2a0a095b90"
-  integrity sha512-1bFR3VUqv0HEGYBLCt5525QE7/Li7Gu/BXaUpLLAWvrD59jMX4QGtp7+tGvO/nDJi6xapoI41M+Yh6fBUrc+ig==
+i18next-phrase-in-context-editor-post-processor@../..:
+  version "1.4.0"
   dependencies:
     "@sagi.io/globalthis" "^0.0.2"
 

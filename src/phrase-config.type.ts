@@ -11,6 +11,8 @@ export type PhraseConfig = {
     version: string;
     priorityLocales: string[];
     projectId: string;
+    accountId: string;
+    useOldICE: boolean;
     branch: string;
     ajaxObserver: boolean;
     debugMode: boolean;

@@ -19,7 +19,7 @@
   "dependencies": {
     "i18next": "^19.5.1",
     "i18next-browser-languagedetector": "^5.0.0",
-    "i18next-phrase-in-context-editor-post-processor": "^1.0.0",
+    "i18next-phrase-in-context-editor-post-processor": "../..",
     "i18next-xhr-backend": "^3.2.2"
   },
   "resolutions": {

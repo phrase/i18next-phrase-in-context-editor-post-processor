@@ -10,7 +10,8 @@ const port = process.env.PORT || 8080;
 const PhraseICEPostProcessorInstance = new PhraseInContextEditorPostProcessor({
     phraseEnabled: true,
     scriptAutoLoad: false,
-    projectId: '00000000000000004158e0858d2fa45c'
+    projectId: '00000000000000004158e0858d2fa45c',
+    accountId: '0bed59e5',
 });
 
 i18next
