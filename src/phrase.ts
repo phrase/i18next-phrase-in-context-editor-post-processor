@@ -11,6 +11,7 @@ export default class PhraseInContextEditorPostProcessor {
         prefix: '{{__',
         suffix: '__}}',
         fullReparse: true,
+        useOldICE: true,
         scriptAutoLoad: true
     };
     phraseScript?: HTMLScriptElement;
