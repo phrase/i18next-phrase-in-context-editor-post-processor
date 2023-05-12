@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.3.0...v1.4.0) (2023-05-12)
+
+
+### Features
+
+* Use new in-context-editor by default ([2a6a5ea](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/2a6a5ea3c7aa041f14ead3e8f89c94a110cddc5c))
+
 # [1.3.0](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.2.1...v1.3.0) (2021-12-14)
 
 
