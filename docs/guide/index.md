@@ -87,6 +87,15 @@ i18next
 
 From now on, the **In-Context Editor** is fully integrated into your JS app. Congratulations! :tada:
 
+To use the old version of ICE, use option `useOldICE: true` in your PHRASEAPP_CONFIG or integration options
+```
+new VueI18nPhraseInContextEditor(i18n as unknown as Vue['$i18n'], {
+    phraseEnabled: true,
+    projectId: '<YOUR_PROJECT_ID>',
+    useOldICE: true,
+});
+```
+
 For further information about the possible configuration options and useful methods, please have a look at our [API docs](../../api).
 
 ## Using the US Datacenter with ICE
@@ -98,4 +107,3 @@ In addition to `phraseEnabled` and `projectId` in the config, also add the US sp
   oauthEndpointUrl: "https://api.us.app.phrase.com/api/v2/authorizations",
   profileUrl: "https://us.app.phrase.com/settings/profile",
 ```
-
