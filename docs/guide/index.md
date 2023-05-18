@@ -89,11 +89,12 @@ From now on, the **In-Context Editor** is fully integrated into your JS app. Con
 
 To use the old version of ICE, use option `useOldICE: true` in your PHRASEAPP_CONFIG or integration options
 ```
-new VueI18nPhraseInContextEditor(i18n as unknown as Vue['$i18n'], {
-    phraseEnabled: true,
-    projectId: '<YOUR_PROJECT_ID>',
-    useOldICE: true,
-});
+i18n
+    .use(new PhraseInContextEditorPostProcessor({
+        phraseEnabled: true,
+        projectId: '<YOUR_PROJECT_ID>',
+        useOldICE: true,
+    }))
 ```
 
 For further information about the possible configuration options and useful methods, please have a look at our [API docs](../../api).
