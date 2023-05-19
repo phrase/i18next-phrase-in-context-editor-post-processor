@@ -72,6 +72,7 @@ suffix: string = '__}}';
 autoLowercase: boolean;
 forceLocale: boolean;
 loginDialogMessage: string;
+useOldICE: boolean;
 autoLogin: {
     perform: boolean;
     email: string;
