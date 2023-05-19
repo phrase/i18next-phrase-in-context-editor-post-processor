@@ -9,15 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Install dependencies
       run: yarn
     - name: Build package
       run: yarn build
     - name: Semantic Release
-      uses: cycjimmy/semantic-release-action@116647291d9b7bef1f5a4315deedd3f46ed4218b
-      with:
-        semantic_version: 17.1.1  # It is recommended to specify specifying version range
-                                    # for semantic-release.
+      uses: cycjimmy/semantic-release-action@v3
       env:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
