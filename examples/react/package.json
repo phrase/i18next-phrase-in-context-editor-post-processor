@@ -9,17 +9,15 @@
     "build": "react-scripts build"
   },
   "devDependencies": {
-    "@types/react": "^16.9.41",
-    "@types/react-dom": "^16.9.8",
-    "react-scripts": "^3.4.1",
-    "typescript": "^3.9.5"
+    "typescript": "^5.0.0"
   },
   "dependencies": {
-    "i18next": "^19.5.1",
-    "i18next-phrase-in-context-editor-post-processor": "../..",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-i18next": "^11.7.0"
+    "i18next": "^22.5.0",
+    "i18next-phrase-in-context-editor-post-processor": "^1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.3.1",
+    "react-scripts": "^5.0.1"
   },
   "browserslist": {
     "production": [
@@ -32,9 +30,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "resolutions": {
-    "node-notifier": ">=8.0.1",
-    "immer": ">=8.0.1"
   }
 }
