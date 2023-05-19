@@ -8,19 +8,13 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@panter/vue-i18next": "^0.15.2",
-    "core-js": "^3.6.5",
-    "i18next": "^19.8.7",
-    "i18next-phrase-in-context-editor-post-processor": "../..",
-    "vue": "^2.6.11",
-    "vue-class-component": "^7.2.3",
-    "vue-property-decorator": "^8.4.2"
+    "i18next": "^22.0.0",
+    "i18next-phrase-in-context-editor-post-processor": "^1.4.0",
+    "vue": "^3.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-typescript": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "typescript": "~3.9.3",
-    "vue-template-compiler": "^2.6.11"
+    "@vue/cli-plugin-typescript": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "typescript": "^5.0.0"
   }
 }
