@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.4.0...v1.4.1) (2023-05-23)
+
+
+### Bug Fixes
+
+* add workaround for docs to run ([54cb3cc](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/54cb3cced8ce52a5445853c4fcf0a42d8f6daf15))
+
 # [1.4.0](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.3.0...v1.4.0) (2023-05-12)
 
 
