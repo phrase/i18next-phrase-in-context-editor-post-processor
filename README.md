@@ -11,18 +11,6 @@
 
 To get started, have a look at the [documentation](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/). There you will find [API docs](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/api/), [getting started guide](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/guide/), [examples](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/examples/) and much more!
 
-## :question: Questions, support
-
-Please contact [support@phrase.com](mailto:support@phrase.com?subject=[GitHub]%20i18next-phrase-in-context-editor-post-processor) and we can take more direct action toward finding a solution.
-
-## :exclamation: Issues
-
-Please use [GitHub issues](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues) to share the problem.
-
-## :memo: Changelog
-
-Detailed changes for each release are documented in the [changelog](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/blob/master/CHANGELOG.md).
-
 ## :hammer: Development
 
 ``` bash
@@ -48,6 +36,14 @@ yarn test.coverage
 # serve docs at localhost:8080/i18next-phrase-in-context-editor-post-processor/
 yarn docs.dev
 ```
+
+## :exclamation: Issues, Questions, Support
+
+Please use [GitHub issues](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues) to share the problem, and we will do our best to answer any questions or to support you in finding a solution!
+
+## :memo: Changelog
+
+Detailed changes for each release are documented in the [changelog](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/blob/master/CHANGELOG.md).
 
 ## :package: Releasing
 
