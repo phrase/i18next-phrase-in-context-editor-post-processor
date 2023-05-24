@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.4.1...v1.5.0) (2023-05-24)
+
+
+### Features
+
+* Use new ICE by default ([6d6d30b](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/6d6d30bc13f791da3e141fa0e51ad9ad5f454919))
+
 ## [1.4.1](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.4.0...v1.4.1) (2023-05-23)
 
 
