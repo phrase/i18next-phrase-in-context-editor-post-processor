@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.5.1...v1.5.2) (2023-08-28)
+
+
+### Bug Fixes
+
+* **TSE-1157:** Improve US datacenter documentation and typings ([#146](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues/146)) ([80d091d](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/80d091d8eaf3cea9feea4ce33017ffdd0f4d2e5a))
+
 ## [1.5.1](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.5.0...v1.5.1) (2023-05-25)
 
 
