@@ -198,10 +198,9 @@ i18next-http-middleware@1.0.1:
   resolved "https://registry.yarnpkg.com/i18next-http-middleware/-/i18next-http-middleware-1.0.1.tgz#ec113a41fcd208b4c4b22863ac98a536d48400db"
   integrity sha512-swo3FaOkKciv1KoROqG63qb6MVaE/2hp0xnBUIJAd8lTUJFSG6+ZepO33rMw/5zcMG6wnU1e+DWPXVt5UMxGJQ==
 
-i18next-phrase-in-context-editor-post-processor@../..:
-  version "1.4.0"
-  dependencies:
-    "@sagi.io/globalthis" "^0.0.2"
+"i18next-phrase-in-context-editor-post-processor@link:../..":
+  version "0.0.0"
+  uid ""
 
 i18next@19.4.4:
   version "19.4.4"

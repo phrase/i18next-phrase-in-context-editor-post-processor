@@ -2636,10 +2636,9 @@ i18next-browser-languagedetector@^5.0.0:
   dependencies:
     "@babel/runtime" "^7.5.5"
 
-i18next-phrase-in-context-editor-post-processor@../..:
-  version "1.4.0"
-  dependencies:
-    "@sagi.io/globalthis" "^0.0.2"
+"i18next-phrase-in-context-editor-post-processor@link:../..":
+  version "0.0.0"
+  uid ""
 
 i18next-xhr-backend@^3.2.2:
   version "3.2.2"
