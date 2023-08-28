@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "i18next": "^22.0.0",
-    "i18next-phrase-in-context-editor-post-processor": "^1.4.0",
+    "i18next-phrase-in-context-editor-post-processor": "link:../..",
     "vue": "^3.0.0"
   },
   "devDependencies": {
