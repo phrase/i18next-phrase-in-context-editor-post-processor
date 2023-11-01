@@ -18,6 +18,7 @@
     },
     "lib": [
       "esnext",
+      "dom"
     ]
   },
   "include": [
