@@ -39,7 +39,7 @@
     "semantic-release": "^19.0.3",
     "ts-jest": "^26.1.1",
     "typescript": "^3.9.5",
-    "vuepress": "^1.9.10",
+    "vuepress": "^1.5.2",
     "vuepress-plugin-clean-urls": "^1.1.1",
     "vuepress-plugin-seo": "^0.1.3"
   },
