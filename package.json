@@ -36,7 +36,7 @@
     "eslint-config-phrase": "https://github.com/phrase/eslint-config-phrase.git",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "microbundle": "^0.12.2",
+    "microbundle": "^0.15.1",
     "semantic-release": "^19.0.3",
     "ts-jest": "^29.1.1",
     "typescript": "^4.3.0",
