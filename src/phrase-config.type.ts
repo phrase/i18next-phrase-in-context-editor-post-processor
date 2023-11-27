@@ -34,4 +34,5 @@ export type PhraseConfig = {
         identifier: string;
     };
     fullReparse: boolean;
+    origin: string;
 };

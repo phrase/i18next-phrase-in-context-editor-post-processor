@@ -12,7 +12,8 @@ export default class PhraseInContextEditorPostProcessor {
         suffix: '__}}',
         fullReparse: true,
         useOldICE: false,
-        scriptAutoLoad: true
+        scriptAutoLoad: true,
+        origin: 'i18next-phrase-in-context-editor-post-processor',
     };
     phraseScript?: HTMLScriptElement;
 
