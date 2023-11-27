@@ -42,6 +42,9 @@ describe('constructor', () => {
             it('should set window.PHRASEAPP_ENABLED', () => {
                 expect(window.PHRASEAPP_ENABLED).toBeTruthy();
             });
+            it('should set origin', () => {
+                expect(window.PHRASEAPP_CONFIG.origin).toBe('i18next-phrase-in-context-editor-post-processor');
+            });
             describe('when script element already exists in the document', () => {
                 let script: HTMLScriptElement;
                 beforeEach(() => {
