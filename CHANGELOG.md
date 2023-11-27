@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.5.2...v1.6.0) (2023-11-27)
+
+
+### Features
+
+* **TSE-1350:** Add origin field to ICE config ([#168](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues/168)) ([6fa1218](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/6fa12185a7e3140085b7781bbe92af3b4d379deb))
+
 ## [1.5.2](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.5.1...v1.5.2) (2023-08-28)
 
 
