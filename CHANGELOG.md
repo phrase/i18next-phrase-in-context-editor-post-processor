@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.6.0...v1.6.1) (2023-12-05)
+
+
+### Bug Fixes
+
+* Add i18next ^23.0.0 peer dependency ([#169](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues/169)) ([7bb75d5](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/7bb75d58c89339feaf490256439a9c2d7745208f))
+
 # [1.6.0](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.5.2...v1.6.0) (2023-11-27)
 
 
