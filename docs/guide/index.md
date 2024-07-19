@@ -67,7 +67,8 @@ i18next
     .use(i18nextXHRBackend)
     .use(new PhraseInContextEditorPostProcessor({
         phraseEnabled: true,
-        projectId: '<YOUR_PHRASE_PROJECT_ID>'
+        projectId: '<YOUR_PHRASE_PROJECT_ID>' // Project ID is found in project settings.
+        accountId: '<YOUR_PHRASE_ACCOUNT_ID>' // Account ID is found in Strings organization settings.
     }))
     .init({
         fallbackLng: 'en',
@@ -93,6 +94,7 @@ i18n
     .use(new PhraseInContextEditorPostProcessor({
         phraseEnabled: true,
         projectId: '<YOUR_PROJECT_ID>',
+        accountId: '<YOUR_ACCOUNT_ID>',
         useOldICE: true,
     }))
 ```
