@@ -1,0 +1,7 @@
+version: 2
+
+updates:
+  - package-ecosystem: 'yarn'
+    # this will ensure that dependabot will only scan the packages in the root directory
+    # omitting the packages in the /examples directory
+    directory: '/'
