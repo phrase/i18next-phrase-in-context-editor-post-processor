@@ -35,4 +35,5 @@ export type PhraseConfig = {
     };
     fullReparse: boolean;
     origin: string;
+    hidingClasses?: string[];
 };

@@ -67,8 +67,8 @@ projectId: string;
 branch: string;
 ajaxObserver: boolean;
 debugMode: boolean;
-prefix: string = '{{__';
-suffix: string = '__}}';
+prefix: string; // default: '{{__'
+suffix: string; // default: '__}}'
 autoLowercase: boolean;
 forceLocale: boolean;
 loginDialogMessage: string;
@@ -84,5 +84,7 @@ sso: {
     provider: string;
     identifier: string;
 };
-fullReparse: boolean = true;
+fullReparse: boolean // default: true;
+origin: string;
+hidingClasses: string[]; // default: ['hidden', 'visuallyhidden', 'invisible'];
 ```
