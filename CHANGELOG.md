@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.6.1...v1.7.0) (2024-12-12)
+
+
+### Features
+
+* **STRINGS-221:** Extend `PhraseConfig` type with `hidingClasses` field ([#216](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues/216)) ([f9d6562](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/f9d6562d1d97c750cd4b0956bef857bd45b1d4b5))
+
 ## [1.6.1](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.6.0...v1.6.1) (2023-12-05)
 
 
