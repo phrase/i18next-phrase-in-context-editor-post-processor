@@ -1,13 +1,50 @@
-name: Test coverage 
+name: Test and SonarQube scan
 on: [push, pull_request]
+
 jobs:
-  lint:
-    name: Lint
+  
+  test:
+    name: Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-      - run: yarn install
-      - run: yarn test.coverage
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run tests 
+        run: yarn test.coverage
+
+      - name: Upload Coverage report
+        uses: actions/upload-artifact@v4.4.3
+        with:
+          name: coverage-report
+          path: coverage/lcov.info
+
+  scan:
+    name: SonarQube Scan
+    needs: [test]
+    runs-on: ['arc-runner-spot'] # Self-hosted runner
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Ensures full commit history for better analysis
+
+      - name: Download coverage report
+        uses: actions/download-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage
+
+      - name: Run SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
