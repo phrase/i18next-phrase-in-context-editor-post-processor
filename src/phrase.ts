@@ -21,7 +21,7 @@ export default class PhraseInContextEditorPostProcessor {
         if (this.config.useOldICE) {
             return `https://phrase.com/assets/in-context-editor/2.0/app.js?${new Date().getTime()}`;
         } else {
-            return 'https://d2bgdldl6xit7z.cloudfront.net/latest/ice/index.js';
+            return 'https://cdn.phrase.com/strings/plugins/editor/latest/ice/index.js';
         }
     }
 
