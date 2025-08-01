@@ -3,11 +3,9 @@
 
 
 "@babel/runtime@^7.3.1":
-  version "7.12.13"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.13.tgz#0a21452352b02542db0ffb928ac2d3ca7cb6d66d"
-  integrity sha512-8+3UMPBrjFa/6TtKi/7sehPKqfAm4g6K+YQjyyFOLUTxzOngcRZTlAVY8sc2CORJYqdHQY8gRPHmn+qo15rCBw==
-  dependencies:
-    regenerator-runtime "^0.13.4"
+  version "7.28.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.28.2.tgz#2ae5a9d51cc583bd1f5673b3bb70d6d819682473"
+  integrity sha512-KHp2IflsnGywDjBWDkR9iEqiWSpc8GIi0lgTT3mOElT0PP1tG26P4tmFI2YvAdzgq9RGyoHZQEIEdZy6Ec5xCA==
 
 "@sagi.io/globalthis@^0.0.2":
   version "0.0.2"
@@ -199,8 +197,9 @@ i18next-http-middleware@1.0.1:
   integrity sha512-swo3FaOkKciv1KoROqG63qb6MVaE/2hp0xnBUIJAd8lTUJFSG6+ZepO33rMw/5zcMG6wnU1e+DWPXVt5UMxGJQ==
 
 "i18next-phrase-in-context-editor-post-processor@link:../..":
-  version "0.0.0"
-  uid ""
+  version "1.7.1"
+  dependencies:
+    "@sagi.io/globalthis" "^0.0.2"
 
 i18next@19.4.4:
   version "19.4.4"
@@ -322,11 +321,6 @@ raw-body@2.4.0:
     http-errors "1.7.2"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
-
-regenerator-runtime@^0.13.4:
-  version "0.13.7"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz#cac2dacc8a1ea675feaabaeb8ae833898ae46f55"
-  integrity sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
 
 safe-buffer@5.1.2:
   version "5.1.2"
