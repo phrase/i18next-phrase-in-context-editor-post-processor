@@ -37,7 +37,7 @@ describe('constructor', () => {
                 expect(phraseScript).not.toBeNull();
             });
             it('should add script tag with phrase url', () => {
-                expect(phraseScript?.src).toBe('https://d2bgdldl6xit7z.cloudfront.net/latest/ice/index.js');
+                expect(phraseScript?.src).toBe('https://cdn.phrase.com/strings/plugins/editor/latest/ice/index.js');
             });
             it('should set window.PHRASEAPP_ENABLED', () => {
                 expect(window.PHRASEAPP_ENABLED).toBeTruthy();
@@ -242,7 +242,7 @@ describe('toScriptHTML', () => {
         it('should a valid script HTML with editor url in place', () => {
             const scripts = document.querySelectorAll('script');
             expect(scripts.length).toBe(2);
-            expect(scripts[1].src.split('?')[0]).toBe('https://d2bgdldl6xit7z.cloudfront.net/latest/ice/index.js'.split('?')[0]);
+            expect(scripts[1].src.split('?')[0]).toBe('https://cdn.phrase.com/strings/plugins/editor/latest/ice/index.js'.split('?')[0]);
         });
     });
 
