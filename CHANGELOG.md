@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.7.0...v1.7.1) (2025-08-04)
+
+
+### Bug Fixes
+
+* **deps:** bump rollup from 2.79.1 to 2.79.2 ([#207](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues/207)) ([a836a2c](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/a836a2c0c80757cbbe3b60b244d8328a17ad361b))
+
 # [1.7.0](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.6.1...v1.7.0) (2024-12-12)
 
 
