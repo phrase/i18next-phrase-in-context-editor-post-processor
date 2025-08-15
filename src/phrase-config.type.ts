@@ -21,6 +21,7 @@ export type PhraseConfig = {
     autoLowercase: boolean;
     forceLocale: boolean;
     loginDialogMessage: string;
+    telemetryEnabled: boolean;
     datacenter: 'eu' | 'us';
     autoLogin: {
         perform: boolean;
