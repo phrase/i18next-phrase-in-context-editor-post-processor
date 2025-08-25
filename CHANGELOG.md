@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.7.1...v1.7.2) (2025-08-25)
+
+
+### Bug Fixes
+
+* **SCM-659:** Add new option for toggling off sentry and mixpanel ([#223](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues/223)) ([e7ff3f2](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/e7ff3f21b51b342a494fb4307132d164de554602))
+
 ## [1.7.1](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.7.0...v1.7.1) (2025-08-04)
 
 
