@@ -10,7 +10,7 @@
   "dependencies": {
     "i18next": "^19.6.0",
     "i18next-phrase-in-context-editor-post-processor": "link:../..",
-    "next": "^10.0.6",
+    "next": "^14.2.32",
     "next-i18next": "^7.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1"
