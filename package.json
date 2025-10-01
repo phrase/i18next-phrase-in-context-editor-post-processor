@@ -32,7 +32,7 @@
     "@types/jest": "^26.0.3",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
-    "eslint": "^7.3.1",
+    "eslint": "^9.36.0",
     "eslint-config-phrase": "https://github.com/phrase/eslint-config-phrase.git",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
