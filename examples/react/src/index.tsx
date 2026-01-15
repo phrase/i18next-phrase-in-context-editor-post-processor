@@ -11,8 +11,6 @@ await i18n
         projectId: '00000000000000004158e0858d2fa45c',
         accountId: '0bed59e5',
         useOldICE: false,
-        prefix: '[[__phrase_', // This can't be default "{{__phrase_" to make Trans elements work
-        suffix: '__]]', // {{}} strings don't play nicely with React
     }))
     .init({
         resources: {

@@ -8,8 +8,8 @@ export type PhraseInContextEditorOptions = Omit<DeepPartial<PhraseConfig>, 'phra
 
 export default class PhraseInContextEditorPostProcessor {
     private defaultConfig: Partial<PhraseConfig> = {
-        prefix: '{{__',
-        suffix: '__}}',
+        prefix: '[[__',
+        suffix: '__]]',
         fullReparse: true,
         useOldICE: false,
         scriptAutoLoad: true,
