@@ -34,7 +34,7 @@ jobs:
       - name: Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn semantic-release --dry-run
+        run: yarn semantic-release --dry-run --no-ci
 
   release:
     if: github.event_name == 'push'
