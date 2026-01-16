@@ -1,3 +1,11 @@
+## [1.7.3](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.7.2...v1.7.3) (2026-01-16)
+
+
+### Bug Fixes
+
+* **SCM-1125:** Change default prefix/suffix to ones with better compatibility with react Trans elements([#239](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues/239)) ([41bf28a](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/41bf28a634e72d06ddb1e23eb07bbfa5fd51ea04))
+* Update release.yml ([#240](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues/240)) ([2b35a09](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/2b35a095491143d0851acc8407d27d45139f0943))
+
 ## [1.7.2](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.7.1...v1.7.2) (2025-08-25)
 
 
