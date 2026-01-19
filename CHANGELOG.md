@@ -1,3 +1,11 @@
+## [1.7.4](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.7.3...v1.7.4) (2026-01-19)
+
+
+### Bug Fixes
+
+* Another fix for npm package release ([#243](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues/243)) ([7794bb6](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/7794bb66a482bd89b0e59fc20b32effce4c7d051))
+* Fix NPM release ([#244](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues/244)) ([45a7906](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/45a7906a7dd267cbd10291c0961e92340e9e3a78))
+
 ## [1.7.3](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.7.2...v1.7.3) (2026-01-16)
 
 
