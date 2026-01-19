@@ -9,6 +9,8 @@ on:
 
 permissions:
   contents: write
+  issues: write
+  pull-requests: write
   id-token: write
 
 jobs:
@@ -31,7 +33,7 @@ jobs:
       - name: Build package
         run: yarn build
 
-      - name: Semantic Release
+      - name: Semantic Release (dry-run)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn semantic-release --dry-run --no-ci
