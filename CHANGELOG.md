@@ -1,3 +1,10 @@
+## [1.7.5](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.7.4...v1.7.5) (2026-01-19)
+
+
+### Bug Fixes
+
+* Fix registry and node for pipeline ([#245](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/issues/245)) ([04883b5](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/commit/04883b563ec82e09aa188ada2cdd723718b09e63))
+
 ## [1.7.4](https://github.com/phrase/i18next-phrase-in-context-editor-post-processor/compare/v1.7.3...v1.7.4) (2026-01-19)
 
 
