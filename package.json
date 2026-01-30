@@ -48,6 +48,9 @@
   "dependencies": {
     "@sagi.io/globalthis": "^0.0.2"
   },
+  "resolutions": {
+    "lru-cache": "^6.0.0"
+  },
   "keywords": [
     "i18next",
     "i18next post processor",
