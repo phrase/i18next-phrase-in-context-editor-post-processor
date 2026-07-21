@@ -14,14 +14,15 @@ In you web browser, open the development server address (by default, it's [http:
 You need to rerun `yarn start` command every time you've made any change to the server's code.
 Any Express errors will be visible within console.
 
-### Login to Phrase demo project
+### Set up with your Phrase trial account
 
-This demo uses special, demo [Phrase](https://phrase.com) project. To login, use authentication data provided below:
+This demo requires a [Phrase](https://phrase.com) trial account. To use this demo:
 
-```bash
-E-Mail: demo@phrase.com
-Password: phrase
-```
+1. Sign up for a free trial at [https://eu.phrase.com/](https://eu.phrase.com/)
+2. After creating your trial account, note your **Account ID** and **Project ID**
+3. Update the `projectId` and `accountId` values in the demo configuration to match your trial account credentials
+
+These IDs can be found in your Phrase account settings after you've created a project.
 
 ## More information
 
